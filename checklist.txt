@@ -1,0 +1,140 @@
+✅ Part 1: Checklist for Every Webpage
+🧱 HTML Structure
+[ ] Valid <!DOCTYPE html> declaration
+
+[ ] Proper <html lang="en"> tag for language
+
+[ ] <head> includes:
+
+[ ] <meta charset="UTF-8">
+
+[ ] <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+[ ] <title> — unique and descriptive
+
+[ ] <meta name="description"> — page-specific
+
+[ ] <meta name="keywords"> (optional)
+
+[ ] <meta name="author">
+
+[ ] Open Graph tags (og:title, og:image, og:description, etc.)
+
+[ ] Twitter card tags (if sharing on X/Twitter)
+
+🎨 Design & Layout
+[ ] Consistent header and footer
+
+[ ] Clear visual hierarchy (headings, spacing, contrast)
+
+[ ] Responsive layout (mobile, tablet, desktop)
+
+[ ] Font sizes and line heights are readable
+
+[ ] Favicon included (favicon.ico or PNG)
+
+🔗 Navigation & Links
+[ ] Navigation bar is consistent across pages
+
+[ ] All internal links work
+
+[ ] External links use target="_blank" and rel="noopener noreferrer"
+
+[ ] Anchor links scroll correctly
+
+[ ] Breadcrumbs (if applicable)
+
+🖼️ Media & Assets
+[ ] Images have descriptive alt text
+
+[ ] Images are optimized (compressed, correct format)
+
+[ ] Lazy loading enabled (loading="lazy")
+
+[ ] Videos use fallback content or captions
+
+🧪 Accessibility
+[ ] Semantic HTML tags used (<main>, <nav>, <section>, etc.)
+
+[ ] ARIA roles and labels where needed
+
+[ ] Keyboard navigation works
+
+[ ] Sufficient color contrast
+
+[ ] Skip-to-content link (optional)
+
+⚙️ Performance & Code Quality
+[ ] CSS and JS are minified
+
+[ ] No inline styles unless necessary
+
+[ ] No unused CSS or JS
+
+[ ] Console is free of errors
+
+[ ] Page loads in under 2 seconds
+
+🌐 Part 2: Checklist for Entire Website
+📁 Core Files
+[ ] index.html at root
+
+[ ] 404.html for broken links
+
+[ ] robots.txt to control search engine indexing
+
+[ ] sitemap.xml for SEO
+
+[ ] .nojekyll file (if using folders starting with _)
+
+[ ] README.md in repo
+
+[ ] LICENSE file (if open source)
+
+🔍 SEO & Metadata
+[ ] Unique <title> and <meta description> per page
+
+[ ] Canonical URLs set
+
+[ ] Structured data (JSON-LD for articles, products, etc.)
+
+[ ] Open Graph and Twitter tags globally consistent
+
+[ ] Google Search Console verified
+
+📊 Analytics & Monitoring
+[ ] Google Analytics or other tracking installed
+
+[ ] Performance tested (PageSpeed Insights, Lighthouse)
+
+[ ] Uptime monitoring (optional)
+
+🔐 Privacy & Legal
+[ ] Cookie consent banner (if tracking)
+
+[ ] Privacy policy page
+
+[ ] Terms of service page
+
+[ ] Accessibility statement (optional)
+
+🧪 Testing & QA
+[ ] Tested on Chrome, Firefox, Safari, Edge
+
+[ ] Tested on mobile, tablet, desktop
+
+[ ] All links and buttons work
+
+[ ] Forms submit correctly
+
+[ ] No broken images or 404s
+
+🧼 Final Polish
+[ ] Spelling and grammar checked
+
+[ ] No placeholder text or lorem ipsum
+
+[ ] Social media links work
+
+[ ] Footer includes copyright and contact info
+

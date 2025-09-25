@@ -1,0 +1,190 @@
+/* Copyright (C) 2025 Ray Zuo, S.D.G. , MIT licence. see /README.md */
+
+:root {
+    --theme1: #226ace;
+    --theme2: #ffffff;
+    --theme3: #efefee;
+    --theme4: #b08d71;
+    --theme-text: #000;
+    --theme5: #c7a279;
+	--theme-background: var(--theme3);
+}
+
+body {
+    background-color: var(--theme-background);
+    color: var(--theme-text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Sans SC", sans-serif;
+    font-weight: 350;
+    letter-spacing: 1px;
+    font-size: 17px;
+    /* gap: 40px; */
+}
+
+a {
+    color: var(--theme4);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--theme5);
+}
+
+
+/* that's is for all thing that this website will use~ */
+.top-image-con {
+    width: 100%;
+    padding: 38px 0 30px 0;
+    align-items: center;
+    text-align: center;
+    /* background-color: var(--theme4); */
+}
+
+.top-image {
+    width: min(calc(100vw - 50px), 520px);
+    height: atuo;
+    align-items: center;
+    text-align: center;
+}
+
+.top-banner-logo-container {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.page-top {
+    background: linear-gradient(0deg, #FFFFFF, var(--theme-background));
+    width: 100%;
+    display: flex;
+    height: 30px;
+    /* background-color: var(--theme4); */
+}
+
+.page-button {
+    width: auto;
+	height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	padding: 7px 35px;
+    transition: all 0.2s ease-in-out;
+	/* those are defalut DTFG(Don'T ForGot) also change the hover*/
+	background-color: var(--theme4);
+	color: var(--theme2);
+}
+
+.page-button:hover {
+	background-color: var(--theme5);
+	color: var(--theme2);
+    cursor: pointer;
+}
+
+.page-button > p {
+    font-weight: bolder;
+	/*those are defalut */
+}
+
+@media (max-width: 768px) {
+
+    .top-banner-hamburger {
+        margin-right: -10px;
+    }
+    
+    .top-image-con {
+        display: none;
+    }
+    
+    .top-banner {
+        margin: 0;
+    }
+
+    .top-banner-logo-container {
+        opacity: 1;
+    }
+
+	.page-top {
+		background: linear-gradient(0deg, #FFFFFF, var(--theme-background));
+		width: 100%;
+		display: flex;
+		height: 10px;
+		/* background-color: var(--theme4); */
+	}
+}
+
+body > noscript {
+	width: calc(100% - 40px);
+    text-align: center;
+	padding: 10px 20px;
+}
+
+.footer {
+    /* box-shadow: 0 -10px 15px -10px rgba(0, 0, 0, 0.6); /* Top-only shadow */
+    border-top: 7px solid var(--theme4);
+    padding-top: 45px;
+    background-color: var(--theme3);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;        
+    gap: 40px;
+	
+}
+
+.footer-contect {
+    height: 250px;
+    display: flex;
+    width: min(1200px, calc(100vw - 80px));
+}
+
+.footer-contect > div {
+    flex: 1; 
+}
+
+.footer-contect-offering {
+    text-align: center;
+}        
+
+.footer-contect-offering a {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px; 
+    color: #7ea8e3;
+}            
+
+.footer-contect-offering a:hover {
+    color: var(--theme1);
+}
+
+.footer-contect-offering-image {
+    width: 125px;
+    height: auto;
+}
+
+.footer-copyright {
+    margin-bottom: 45px;
+    font-size: 10px;
+    align-items: center;
+    text-align: center;        
+    color: black;
+}
+
+@media (max-width: 770px) {
+    .footer-contect {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .footer-contect > div {    
+        flex: 1; 
+        height: 250px;
+    }    
+}

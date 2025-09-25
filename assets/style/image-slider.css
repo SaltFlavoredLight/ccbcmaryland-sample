@@ -1,0 +1,87 @@
+/* Copyright (C) 2025 Ray Zuo, S.D.G. , MIT licence. see /README.md */
+
+:root {
+    --image-slider-button: var(--theme-background);
+    --image-slider-button-text: var(--theme-text);
+    --image-slider-dots-color1: var(--theme-background);
+    --image-slider-dots-color2: var(--theme-text);
+
+}
+
+.image-slider {
+    width: 100%;
+    height: min(60vh, 55vw);
+    overflow: hidden;
+    position: relative;
+}
+
+.image-slider-slides {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    align-items: center; 
+}
+
+.image-slider-slides img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-slider-prev,
+.image-slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--image-slider-button);
+    color: var(--image-slider-button-text);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.image-slider-prev:hover,
+.image-slider-next:hover {
+    opacity: 1;
+}
+
+.image-slider-prev {
+    left: 0;
+}
+
+.image-slider-next {
+    right: 0;
+}
+
+.image-slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.image-slider-dot {
+    height: 15px;
+    width: 15px;
+    background-color: var(--image-slider-dots-color1);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.image-slider-dot.active {
+    background-color: var(--image-slider-dots-color2);
+}
+
+/* Hide elements based on slider mode */
+.hidden {
+    display: none !important;
+}

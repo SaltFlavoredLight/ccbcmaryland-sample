@@ -1,0 +1,53 @@
+/* Copyright (C) 2025 Ray Zuo, S.D.G. , MIT licence. see /README.md */
+
+.worship-maincontact {
+	padding: 40px 0 ;
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	gap: 40px;
+}
+
+.worship-maincontact-youtubes {
+	padding: 30px 0;
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 350px;
+    gap: 50px;
+	width: min(calc(100% - 100px), 1350px);
+}
+
+.worship-maincontact-youtubes > h2 {
+	font-size: 28px;
+    text-align: center;
+	margin: 0;
+}
+
+.worship-maincontact-youtubes-title1 { grid-row: 1; grid-column: 1; }
+.worship-maincontact-youtubes-title2 { grid-row: 1; grid-column: 2; }
+.worship-maincontact-youtubes-video1 { grid-row: 2; grid-column: 1; }
+.worship-maincontact-youtubes-video2 { grid-row: 2; grid-column: 2; }
+
+@media (max-width: 600px) {
+	.worship-maincontact-youtubes {
+		width: calc(100% - 40px);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 250px 1fr 250px;
+	}
+	
+    .worship-maincontact-youtubes > h2 {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .worship-maincontact-youtubes > iframe {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+
+.worship-maincontact-links {
+	padding: 15px 0;
+}

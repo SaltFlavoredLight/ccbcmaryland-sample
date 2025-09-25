@@ -1,551 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#efefee" />
     <meta property="og:title" content="哥倫比亞華人浸信會 - Columbia Chinese Baptist Church" />
     <meta property="og:description" content="異象：影響社區的聖靈果子門徒群體。使命：遵照聖經造就舍己跟從主的門徒。" />
-    <meta property="og:image" content="ccbcmarylandsample.surge.sh/images/main-image-slide (3).jpg" />
+    <meta property="og:image" content="ccbcmarylandsample.surge.sh/assets/images/home-image-slide (3).jpg" />
     <meta property="og:url" content="ccbcmarylandsample.surge.sh" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Columbia Chinese Baptist Church website" />
-    <meta name="twitter:card" content="ccbcmarylandsample.surge.sh/images/main-image-slide (3).jpg" />
+    <meta name="twitter:card" content="ccbcmarylandsample.surge.sh/assets/images/home-image-slide (3).jpg" />
     <meta name="twitter:title" content="哥倫比亞華人浸信會 - Columbia Chinese Baptist Church" />
     <meta name="twitter:description" content="異象：影響社區的聖靈果子門徒群體。使命：遵照聖經造就舍己跟從主的門徒。" />
-    <meta name="twitter:image" content="ccbcmarylandsample.surge.sh/images/main-image-slide (3).jpg" />
+    <meta name="twitter:image" content="ccbcmarylandsample.surge.sh/assets/images/home-image-slide (3).jpg" />
     <title> 哥倫比亞華人浸信會 - Columbia Chinese Baptist Church </title>
-	<link rel="icon" type="image/x-icon" href="/images/logo.png">
-	<link rel="apple-touch-icon" href="/images/logo.png">
+	<link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+	<link rel="apple-touch-icon" href="/assets/images/logo.png">
+	<!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
-	<style>
-	    :root {
-		    --theme1: #226ace;
-			--theme2: #ffffff;
-			--theme3: #efefee;
-			--theme4: #b08d71;
-			--theme-background: var(--theme3);
-			--theme-text: #000;
-			--theme5: #d5bc9d;
-		}
-		
-        body {
-            background-color: var(--theme-background);
-            color: var(--theme-text);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-	        font-family: "roboto", sans-serif;
-	        font-weight: 350;
-            letter-spacing: 1px;
-			font-size: 15px;
-            /*			gap: 40px;*/
-        }
-		
-		body > div {
-		    margin-bottom: 40px;
-		}
-		
-		a {
-		    color: var(--theme4);
-            text-decoration: none;
-            transition: color 0.2s ease;
-		}
-		
-		a:hover {
-		    color: var(--theme5);
-		}
-	</style>
-	<style>
-        /* this is style for header, resource from Ray Zuo's (Or Ray Studio) temple. */
-        :root {
-            --top-banner-background-color: var(--theme-background);
-            --top-banner-nav-color: var(--theme-text);
-            --top-banner-nav-hover-color: var(--theme5);
-            --top-banner-background-color-sticky: var(--theme4);
-            --top-banner-nav-color-sticky: var(--theme3);
-            --top-banner-nav-hover-color-sticky: var(--theme5);
-			--scroll-time: 0.25s;
-        }
-          /* === Header (top-banner) === */
-        .top-banner {
-            width: calc(100% - 100px);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: var(--top-banner-background-color);
-            color: var(--top-banner-nav-color);
-            padding: 20px 50px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            white-space: nowrap;
-        }
-
-        .top-banner-logo-container,
-        .top-banner-right-button-desktop {
-            display: flex;
-            flex-shrink: 0;
-            width: 150px;
-        }
-
-        .top-banner-right-button-desktop {
-            justify-content: flex-end;
-        }
-
-        .top-banner-right-button-moblie {
-            display: none;
-        }
-
-        .top-banner-top-banner img,
-        .top-banner-logo-container img,
-        .top-banner-right-button-desktop img,
-        .top-banner-right-button-moblie img {
-    		height: 40px;
-            width: auto;
-        }
-
-        .top-banner-nav-menu {
-            flex: 1;
-            max-width: calc(100% - 200px);
-            background-color: var(--top-banner-background-color);
-            color: var(--top-banner-nav-color);
-        }
-
-        .top-banner-nav-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px 30px;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            padding: 0;
-            list-style: none;
-            white-space: nowrap;
-            /* font-weight: bold; */
-            color: var(--top-banner-nav-color);
-        }
-
-        .top-banner-nav-links a {
-            display: inline-block;
-            color: var(--top-banner-nav-color);
-            text-decoration: none;
-            /* font-size: 14px; */
-            transition: color var(--scroll-time) ease;
-            white-space: nowrap;
-        }
-
-        .top-banner-nav-links a:hover {
-            color: var(--top-banner-nav-hover-color);
-        }
-
-        .top-banner-nav-links a.youtube-link:hover {
-            color: gold;
-        }
-
-        /* Hamburger menu */
-        .top-banner-hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            margin-left: 20px;
-            color: var(--top-banner-nav-color);
-            transition: color var(--scroll-time) ease;
-			justify-content: flex-end;
-        }
-
-        .top-banner-hamburger span {
-            width: 25px;
-            height: 3px;
-            background: var(--top-banner-nav-color);
-            transition: background var(--scroll-time) ease;
-            margin: 4px 0;
-            border-radius: 2px;
-        }
-
-        /* Sticky state */
-        .top-banner.is-sticky {
-            background-color: var(--top-banner-background-color-sticky);
-            color: var(--top-banner-nav-color-sticky);
-        }
-
-        .top-banner.is-sticky .top-banner-hamburger {
-            color: var(--top-banner-nav-color-sticky);
-            transition: color var(--scroll-time) ease;
-        }
-
-        .top-banner.is-sticky .top-banner-hamburger span {
-            background: var(--top-banner-nav-color-sticky);
-            transition: background var(--scroll-time) ease;
-        }
-
-        .top-banner.is-sticky a {
-            color: var(--top-banner-nav-color-sticky);
-        }
-
-        .top-banner.is-sticky a:hover {
-            color: var(--top-banner-nav-hover-color-sticky);
-        }
-
-        .top-banner.is-sticky .top-banner-nav-menu {
-            background-color: var(--top-banner-background-color-sticky);
-            color: var(--top-banner-nav-color-sticky);
-        }
-
-        .top-banner.is-sticky .top-banner-nav-links a {
-            color: var(--top-banner-nav-color-sticky);
-        }
-
-        .top-banner.is-sticky .top-banner-nav-links a:hover {
-            color: var(--top-banner-nav-hover-color-sticky);
-        }
-
-        .top-banner,
-        .top-banner .top-banner-nav-menu {
-          transition: background-color var(--scroll-time) ease, color var(--scroll-time) ease, opacity 0.6s ease-in-out, clip-path 0.6s ease-in-out;
-        }
-
-        .top-banner-nav-links a {
-          transition: color var(--scroll-time) ease;
-        }
-
-        /* Mobile styles */
-        @media (max-width: 768px) {
-            .top-banner-nav-menu {
-                position: absolute;
-                top: 68px;
-                right: 0;
-                width: 100%;
-                flex-direction: column;
-                display: flex;
-                background-color: var(--top-banner-background-color);
-                color: var(--top-banner-nav-color);
-                clip-path: inset(0 0 100% 0);
-                pointer-events: none;
-                flex: 1;
-                max-width: 100%;
-                height: calc(100vh - 100%);
-                padding-bottom: 20px;
-            }
-
-            .top-banner-nav-menu.active {
-                clip-path: inset(0 0 0 0);
-                transform: translateY(0);
-                pointer-events: auto;
-            }
-
-            .top-banner-nav-links {
-                flex-direction: column;
-                margin: 0;
-            }
-
-            .top-banner-nav-links li {
-                margin: 10px 0;
-            }
-
-            .top-banner-hamburger {
-                display: flex;
-            }
-
-            .top-banner-right-button-desktop {
-                display: none;
-            }
-
-            .top-banner-right-button-moblie {
-                display: block;
-            }
-
-            .top-banner.is-sticky .top-banner-nav-menu {
-                background-color: var(--top-banner-background-color-sticky);
-                color: var(--top-banner-nav-color-sticky);
-            }
-
-            .top-banner.is-sticky .top-banner-nav-links a {
-                color: var(--top-banner-nav-color-sticky);
-            }
-
-            .top-banner.is-sticky .top-banner-nav-links a:hover {
-                color: var(--top-banner-nav-hover-color-sticky);
-            }
-        }
-
-        /* Hamburger animations */
-        @keyframes hamburger-toggle-T {
-            0% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(11px) rotate(0deg); }
-            100% { transform: translateY(11px) rotate(-135deg); }
-        }
-
-        @keyframes hamburger-toggle-M {
-            0% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(0) rotate(0deg); }
-            100% { transform: translateY(0) rotate(-135deg); }
-        }
-
-        @keyframes hamburger-toggle-B {
-            0% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-11px) rotate(0deg); }
-            100% { transform: translateY(-11px) rotate(135deg); }
-        } }
-		}	
-    </style>
-    <style>
-        :root {
-            --image-slider-button: var(--theme-background);
-            --image-slider-button-text: var(--theme-text);
-            --image-slider-dots-color1: var(--theme-background);
-            --image-slider-dots-color2: var(--theme-text);
-
-        }
-
-        .image-slider {
-            width: 100%;
-            height: min(60vh, 55vw);
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .image-slider-slides {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            width: 100%;
-            height: 100%;
-            transition: transform 0.5s ease-in-out;
-            align-items: center; 
-        }
-        
-        .image-slider-slides img {
-            flex: 0 0 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        
-        .image-slider-prev,
-        .image-slider-next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: var(--image-slider-button);
-            color: var(--image-slider-button-text);
-            border: none;
-            padding: 1rem;
-            cursor: pointer;
-            z-index: 1;
-        }
-        
-        .image-slider-prev:hover,
-        .image-slider-next:hover {
-            opacity: 1;
-        }
-        
-        .image-slider-prev {
-            left: 0;
-        }
-        
-        .image-slider-next {
-            right: 0;
-        }
-        
-        .image-slider-dots {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-        }
-        
-        .image-slider-dot {
-            height: 15px;
-            width: 15px;
-            background-color: var(--image-slider-dots-color1);
-            border-radius: 50%;
-            display: inline-block;
-            cursor: pointer;
-            transition: background-color 0.6s ease;
-        }
-        
-        .image-slider-dot.active {
-            background-color: var(--image-slider-dots-color2);
-        }
-
-        /* Hide elements based on slider mode */
-        .hidden {
-            display: none !important;
-        }
-    </style>
-	<style>
-	    .top-image-con {
-		    width: 100%;
-			padding-top: 30px;
-            align-items: center;
-			text-align: center;
-		}
-		
-	    .top-image {
-		    width: min(calc(100vw - 50px), 520px);
-			height: atuo;
-            align-items: center;
-			text-align: center;
-		}
-		
-		.top-banner-logo-container {
-		    opacity: 0;
-		}
-		
-        @media (max-width: 768px) {
-		
-            .top-banner-hamburger {
-                margin-right: -10px;
-			}
-			
-			.top-image-con {
-                display: none;
-			}
-            
-			.top-banner {
-				margin: 0;
-			}
-
-		    .top-banner-logo-container {
-		        opacity: 1;
-		    }
-		}
-		
-		.footer {
-		    width: 100%;
-            display: flex;
-            flex-direction: column;
-			align-items: center;
-			text-align: left;		
-			gap: 40px;
-		}
-		
-		.footer-contect {
-			height: 250px;
-		    display: flex;
-			width: min(1200px, calc(100vw - 80px));
-		}
-
-        .footer-contect > div {
-            flex: 1; 
-        }
-
-        .footer-contect-offering {
-		    text-align: center;
-        }		
-		
-        .footer-contect-offering a {
-            text-decoration-line: underline;
-            text-decoration-thickness: 3px;
-			text-underline-offset: 3px; 
-			color: #7ea8e3;
-        }			
-
-        .footer-contect-offering a:hover {
-		    color: var(--theme1);
-        }
-
-		.footer-contect-offering-image {
-		    width: 125px;
-			height: auto;
-		}
-
-		.footer-copyright {
-		    margin-bottom: 40px;
-		    font-size: 10px;
-			align-items: center;
-			text-align: center;		
-			color: black;
-		}
-		
-        @media (max-width: 770px) {
-		    .footer-contect {
-			    height: auto;
-			    flex-direction: column;
-				gap: 20px;
-			}
-			
-		    .footer-contect > div {	
-                flex: 1; 
-				height: 250px;
-            }	
-		}
-	</style>
-	<style>
-	    .main-info-person {
-		    text-align: center;
-		}
-	
-	    /* banner 2 */
-        .main-info-schedule {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(4, auto);
-            gap: 15px 30px;
-            padding: 30px;
-        }
-        
-        /* Left column (A1–A4) */
-        .main-info-schedule > p:nth-child(1) { grid-row: 1; grid-column: 1; }
-        .main-info-schedule > p:nth-child(2) { grid-row: 2; grid-column: 1; }
-        .main-info-schedule > p:nth-child(3) { grid-row: 3; grid-column: 1; }
-        .main-info-schedule > p:nth-child(4) { grid-row: 4; grid-column: 1; }
-        
-        /* Right column (B1–B4) */
-        .main-info-schedule > p:nth-child(5) { grid-row: 1; grid-column: 2; }
-        .main-info-schedule > p:nth-child(6) { grid-row: 2; grid-column: 2; }
-        .main-info-schedule > p:nth-child(7) { grid-row: 3; grid-column: 2; }
-        .main-info-schedule > p:nth-child(8) { grid-row: 4; grid-column: 2; }
-        
-		
-		.main-info-schedule p { margin: 3px; }
-		
-        @media (max-width: 600px) {
-            .main-info-schedule {
-                grid-template-columns: 1fr !important;
-                grid-template-rows: auto !important;
-            }
-        
-            .main-info-schedule > p {
-                grid-column: 1 !important;
-                grid-row: auto !important;
-            }
-        }	
-		
-		.main-youtube1 {
-		    width: min(530px, calc(100% - 40px));
-		}
-		
-		.main-ourmission {
-            background-color: var(--theme2);
-			display: flex;
-            flex-direction: column;
-			gap: 10px;
-			width: 100%;
-			align-items: center;
-			padding: 40px 0;
-		    text-align: center;
-        }
-		
-		.main-ourmission > h2 {
-		    font-size: 24px;
-            text-decoration-line: underline;
-            text-decoration-thickness: 3px;
-			text-underline-offset: 3px; 
-		}
-
-		.main-ourmission > p {
-		    font-size: 20px;
-		}
-	</style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+	<!-- this is to add CSS -->
+	<link rel="stylesheet" href="/assets/style/global.css" />
+	<link rel="stylesheet" href="/assets/style/top-banner.css" />
+	<link rel="stylesheet" href="/assets/style/image-slider.css" />
+	<link rel="stylesheet" href="/assets/style/home.css" />
 </head>
 <body>
     <!-- Hello! Christian devalopers! My name is Ray, you can check my youtube @RayStudio1130 to get more!
@@ -554,24 +34,26 @@
 		 
     <!-- top popup first! -->
     <noscript>
+        您的浏览器当前已禁用 JavaScript。这意味着部分页面可能无法正常显示。
+        请<a href="https://turnonjs.com" title="了解如何启用 JavaScript">启用 JavaScript</a>，以获得完整的网站功能。<br>
 	    JavaScript is currently disabled in your web browser. that's mean some thing can't load.
 	    <a href="https://turnonjs.com" title="Learn how to enable JavaScript">Turn on JavaScript</a> for full website functionality.
 	</noscript>
 	
-    <!-- That's Main Page-->
+    <!-- That's home Page-->
 	<div class="top-image-con">
         <a href="/">
-            <img src="/images/logofull.png" alt="哥倫比亞華人浸信會 - Columbia Chinese Baptist Church" class="top-image">
+            <img src="/assets/images/logofull.png" alt="哥倫比亞華人浸信會 - Columbia Chinese Baptist Church" class="top-image">
         </a>		
   	</div>
     <div class="top-banner">
         <div class="top-banner-logo-container">
-            <img src="/images/logofull.png" alt="哥倫比亞華人浸信會 - Columbia Chinese Baptist Church" class="top-image">
+            <img src="/assets/images/logofull.png" alt="哥倫比亞華人浸信會 - Columbia Chinese Baptist Church" class="top-image">
         </div>
         <nav class="top-banner-nav-menu">
             <ul class="top-banner-nav-links">
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">首頁</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">教會簡介</a></li>
+                <li><a href="/">首頁</a></li>
+                <li><a href="/aboutus">教會簡介</a></li>
                 <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">主日信息</a></li>
                 <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">youth</a></li>
                 <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">團契事工</a></li>
@@ -590,14 +72,16 @@
         </div>
     </div>
 
-    <div class="image-slider page-top">
+    <span class="page-top"></span>
+
+    <div class="image-slider">
         <div class="image-slider-slides">
-            <img src="/images/main-image-slide (1).jpg" alt="Slide 1" />
-            <img src="/images/main-image-slide (2).jpg" alt="Slide 2" />
-            <img src="/images/main-image-slide (3).jpg" alt="Slide 3" />
-            <img src="/images/main-image-slide (4).jpg" alt="Slide 4" />
-            <img src="/images/main-image-slide (5).jpg" alt="Slide 5" />
-            <img src="/images/main-image-slide (6).jpg" alt="Slide 6" />
+            <img src="/assets/images/home-image-slide (1).jpg" alt="Slide 1" />
+            <img src="/assets/images/home-image-slide (2).JPG" alt="Slide 2" />
+            <img src="/assets/images/home-image-slide (3).JPG" alt="Slide 3" />
+            <img src="/assets/images/home-image-slide (4).jpg" alt="Slide 4" />
+            <img src="/assets/images/home-image-slide (5).jpg" alt="Slide 5" />
+            <img src="/assets/images/home-image-slide (6).jpg" alt="Slide 6" />
         </div>
 
         <button class="image-slider-prev">&#10094;</button>
@@ -606,37 +90,41 @@
         <div class="image-slider-dots"></div>
     </div>
 
-    <div class="main-info-person">
-	    <h3>牧師：張瑞新牧師</h3>
-		<!-- Pastor: Rev. Zhang Ruixin -->
-	    <h3>English Minister: Rev. Earl Ridgell</h3>
-	</div>
-	
-	<div class="main-info-schedule">
-	    <p> 中文崇拜：星期日上午 11:00 </p>
-	    <p> 英文崇拜：星期日上午 11:00 </p>
-	    <p> 主日學  ：星期日上午 9:45 </p>
-	    <p> 禱告會  ：星期三晚上 8:00 </p>
-	    <p> Worship (Chinese) ：Sunday 11:00 AM </p>
-	    <p> Worship (English) ：Sunday 11:00 AM </p>
-	    <p> Sunday School     ：Sunday 9:45 AM </p>
-	    <p> Prayer Meeting    ：Wednesday 8:00 PM </p>		
-	</div>
-	
-	<div class="main-youtube1">
-	    <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?si=HKQZR4sJlSr2RXdK&amp;list=PLs-PGm5doWHwn2i8EGDeLrrqBZo63o848"
-        	title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-			referrerpolicy="strict-origin-when-cross-origin" 
-			allowfullscreen></iframe>
+    <div class="home-info">
+		<div class="home-info-person">
+			<h3>牧師：張瑞新牧師</h3>
+			<!-- Pastor: Rev. Zhang Ruixin -->
+			<h3>English Minister: Rev. Earl Ridgell</h3>
+		</div>
+		
+		<div class="home-info-schedule">
+			<p> 中文崇拜：星期日上午 11:00 </p>
+			<p> 英文崇拜：星期日上午 11:00 </p>
+			<p> 主日學  ：星期日上午 9:45 </p>
+			<p> 禱告會  ：星期三晚上 8:00 </p>
+			<p> Worship (Chinese) ：Sunday 11:00 AM </p>
+			<p> Worship (English) ：Sunday 11:00 AM </p>
+			<p> Sunday School     ：Sunday 9:45 AM </p>
+			<p> Prayer Meeting    ：Wednesday 8:00 PM </p>		
+		</div>
+		
+		<div class="home-info-youtube1">
+			<iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?si=HKQZR4sJlSr2RXdK&amp;list=PLs-PGm5doWHwn2i8EGDeLrrqBZo63o848"
+				title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+				referrerpolicy="strict-origin-when-cross-origin" 
+				allowfullscreen></iframe>
+		</div>
 	</div>
 
-    <div class="main-ourmission">
+    <div class="home-ourmission">
 	    <h2>異象</h2>
 		<p>擁有一個能夠影響社區的結滿聖靈果子的耶穌基督門徒群體。</p>
 		<h2>使命</h2>
 		<p>遵照聖經造就能夠舍己，背著十字架跟從主，結出善果的門徒。</p>
 	</div>
-	
+
+    <span class="page-end"></span>
+
 	<footer class="footer">
 	    <div class="footer-contect">
 		    <div class="footer-contect-info">
@@ -653,7 +141,7 @@
 			</div>
 			<div class="footer-contect-offering">
 			    <a href="https://www.paypal.com/qrcodes/managed/a8763769-fa2e-4c26-aa70-fd2ea0e797c0?utm_source=payandgetpaid" target="_blank">
-				    <img class="footer-contect-offering-image" alt="online offering on here" src="/images/offering.jpg">
+				    <img class="footer-contect-offering-image" alt="online offering on here" src="/assets/images/offering.jpg">
 		    		<h4>网上奉献</h4>
 	    			<h4>online offering</h4>
 				</a>
@@ -661,137 +149,16 @@
 		</div>
         <p class="footer-copyright">
 		    This website is made by Ray Zuo. for his youtube, go <a href="https://youtube.com/@RayStudio1130"> @RayStudio1130 </a><br>
-            Copyright &copy; Ray Studio 2025, all right resered by <a href="licence.txt">licence.txt</a>, S.D.G.<br>
+            Copyright &copy; Ray Studio 2025, all right resered by <a href="/LICENCE.txt">licence.txt</a>, S.D.G. more on <a href="/README.md">there!</a>.<br>
             "Love your lord with all your heart and with all your soul and with all your mind." --- Matthew 22:37. 	<br>
-			(disclarmer: only website (HTML design, CSS, JS) is by Ray Studio, other include images, text is by <a href="https://ccbcmaryland.org"> ccbcmaryland.org</a>)<br>
+			(disclarmer: only website (HTML design, CSS, JS) is by Ray Studio, images, text is by <a href="https://ccbcmaryland.org"> ccbcmaryland.org</a>)<br>
 		</p>
 	</footer>
 
 	<!-- now for popup and hidden massage.... -->
 
 	<!-- Ezra 4:7	They wrote in the Aramaic language and "JavaScript" to King Artaxerxes of Persia. -->
-	<script>
-	    //top-banner script. 
-		const openStikey = 1; // set 0 if you don't want this!
-		const topBanner = document.querySelector('.top-banner');
-		const toggle = document.querySelector('.page-top');
-
-		if (openStikey && topBanner && toggle) {
-			const observer = new IntersectionObserver(
-				([entry]) => {
-					topBanner.classList.toggle('is-sticky', entry.intersectionRatio < 1);
-				},
-				{ threshold: [1] }
-			);
-
-			observer.observe(toggle);
-		}
-        document.addEventListener("DOMContentLoaded", () => {
-            const hamburger = document.getElementById("top-banner-hamburger");
-            const navMenu = document.querySelector(".top-banner-nav-menu");
-			const hambergerLineT = document.getElementById("top-banner-hamberger-line-t");
-			const hambergerLineM = document.getElementById("top-banner-hamberger-line-m");
-			const hambergerLineB = document.getElementById("top-banner-hamberger-line-b");
-            let isOpen = false;
-
-            hamburger.addEventListener("click", () => {
-                navMenu.classList.toggle("active");
-                const direction = isOpen ? "reverse" : "normal";
-				hambergerLineT.style.animation = `none`;
-                hambergerLineM.style.animation = `none`;
-                hambergerLineB.style.animation = `none`;
-				void hambergerLineT.offsetWidth; // 强制重绘以重新触发动画
-                void hambergerLineM.offsetWidth; // 强制重绘以重新触发动画
-                void hambergerLineB.offsetWidth; // 强制重绘以重新触发动画
-                hambergerLineT.style.animation = `hamburger-toggle-T 0.6s ease-in-out forwards ${direction}`;
-                hambergerLineM.style.animation = `hamburger-toggle-M 0.6s ease-in-out forwards ${direction}`;
-                hambergerLineB.style.animation = `hamburger-toggle-B 0.6s ease-in-out forwards ${direction}`;
-                isOpen = !isOpen;
-            });
-        });        
-	</script>
-    <script>
-        // Use a 3-digit string to control the slider.
-        // First digit: '1' to enable dots, '0' to hide them.
-        // Second digit: '1' to enable arrows, '0' to hide them.
-        // Third digit: '0' for no autoplay, '1-9' for autoplay duration in seconds.
-        const sliderMode = "115";
-
-        let currentSlide = 0;
-        const slides = document.querySelector('.image-slider-slides');
-        const dotsContainer = document.querySelector('.image-slider-dots');
-        const totalSlides = slides.children.length;
-
-        // Function to update the slide and the active dot
-        function updateSlide() {
-            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-            const dots = document.querySelectorAll('.image-slider-dot');
-            dots.forEach((dot, index) => {
-                if (index === currentSlide) {
-                    dot.classList.add('active');
-                } else {
-                    dot.classList.remove('active');
-                }
-            });
-        }
-
-        // Set up the slider based on the first two digits of sliderMode
-        const showDots = sliderMode[0] === '1';
-        const showArrows = sliderMode[1] === '1';
-
-        // Set up dots if enabled
-        if (showDots) {
-            for (let i = 0; i < totalSlides; i++) {
-                const dot = document.createElement('span');
-                dot.classList.add('image-slider-dot');
-                dot.addEventListener('click', () => {
-                    currentSlide = i;
-                    updateSlide();
-                });
-                dotsContainer.appendChild(dot);
-            }
-        } else {
-            dotsContainer.classList.add('hidden');
-        }
-
-        // Set up arrow buttons if enabled
-        const nextButton = document.querySelector('.image-slider-next');
-        const prevButton = document.querySelector('.image-slider-prev');
-        if (showArrows) {
-            nextButton.addEventListener('click', () => {
-                currentSlide = (currentSlide + 1) % totalSlides;
-                updateSlide();
-            });
-            prevButton.addEventListener('click', () => {
-                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-                updateSlide();
-            });
-            // Also add keyboard navigation if arrows are enabled
-            document.addEventListener('keydown', (event) => {
-                if (event.key === 'ArrowRight') {
-                    currentSlide = (currentSlide + 1) % totalSlides;
-                    updateSlide();
-                } else if (event.key === 'ArrowLeft') {
-                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-                    updateSlide();
-                }
-            });
-        } else {
-            nextButton.classList.add('hidden');
-            prevButton.classList.add('hidden');
-        }
-        
-        // Autoplay logic based on the third digit of sliderMode
-        const autoplayDuration = parseInt(sliderMode[2], 10);
-        if (autoplayDuration > 0) {
-            setInterval(() => {
-                currentSlide = (currentSlide + 1) % totalSlides;
-                updateSlide();
-            }, autoplayDuration * 1000);
-        }
-
-        // Initialize the slider to show the first dot as active on page load
-        updateSlide();
-    </script>
+	<script src="/assets/script/top-banner.js"></script>
+	<script src="/assets/script/image-slider.js"></script>
 </body>
 </html>

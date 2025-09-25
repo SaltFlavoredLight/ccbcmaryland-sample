@@ -1,0 +1,220 @@
+/* Copyright (C) 2025 Ray Zuo, S.D.G. , MIT licence. see /README.md */
+
+:root {
+    --top-banner-background-color: var(--theme-background); /* --theme-background */
+    --top-banner-nav-color: var(--theme-text); /* theme-text */
+    --top-banner-nav-hover-color: var(--theme5);
+    --top-banner-background-color-sticky: var(--theme4);
+    --top-banner-nav-color-sticky: var(--theme3);
+    --top-banner-nav-hover-color-sticky: var(--theme5);
+    --scroll-time: 0.25s;
+}
+  /* === Header (top-banner) === */
+.top-banner {
+    width: calc(100% - 100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--top-banner-background-color);
+    color: var(--top-banner-nav-color);
+    padding: 20px 50px;
+    position: sticky; /* delete that if you don't want! */
+    top: 0;
+    z-index: 1000;
+    white-space: nowrap;
+}
+
+.top-banner-logo-container,
+.top-banner-right-button-desktop {
+    display: flex;
+    flex-shrink: 0;
+    width: 150px;
+}
+
+.top-banner-right-button-desktop {
+    justify-content: flex-end;
+}
+
+.top-banner-right-button-moblie {
+    display: none;
+}
+
+.top-banner-top-banner img,
+.top-banner-logo-container img,
+.top-banner-right-button-desktop img,
+.top-banner-right-button-moblie img {
+    height: 40px;
+    width: auto;
+}
+
+.top-banner-nav-menu {
+    flex: 1;
+    max-width: calc(100% - 200px);
+    background-color: var(--top-banner-background-color);
+    color: var(--top-banner-nav-color);
+}
+
+.top-banner-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+    /* font-weight: bold; */
+    color: var(--top-banner-nav-color);
+}
+
+.top-banner-nav-links a {
+    display: inline-block;
+    color: var(--top-banner-nav-color);
+    text-decoration: none;
+    /* font-size: 14px; */
+    transition: color var(--scroll-time) ease;
+    white-space: nowrap;
+}
+
+.top-banner-nav-links a:hover {
+    color: var(--top-banner-nav-hover-color);
+}
+
+.top-banner-nav-links a.youtube-link:hover {
+    color: gold;
+}
+
+/* Hamburger menu */
+.top-banner-hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+    color: var(--top-banner-nav-color);
+    transition: color var(--scroll-time) ease;
+    justify-content: flex-end;
+}
+
+.top-banner-hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--top-banner-nav-color);
+    transition: background var(--scroll-time) ease;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+/* Sticky state */
+.top-banner.is-sticky {
+    background-color: var(--top-banner-background-color-sticky);
+    color: var(--top-banner-nav-color-sticky);
+}
+
+.top-banner.is-sticky .top-banner-hamburger {
+    color: var(--top-banner-nav-color-sticky);
+    transition: color var(--scroll-time) ease;
+}
+
+.top-banner.is-sticky .top-banner-hamburger span {
+    background: var(--top-banner-nav-color-sticky);
+    transition: background var(--scroll-time) ease;
+}
+
+.top-banner.is-sticky a {
+    color: var(--top-banner-nav-color-sticky);
+}
+
+.top-banner.is-sticky a:hover {
+    color: var(--top-banner-nav-hover-color-sticky);
+}
+
+.top-banner.is-sticky .top-banner-nav-menu {
+    background-color: var(--top-banner-background-color-sticky);
+    color: var(--top-banner-nav-color-sticky);
+}
+
+.top-banner.is-sticky .top-banner-nav-links a {
+    color: var(--top-banner-nav-color-sticky);
+}
+
+.top-banner.is-sticky .top-banner-nav-links a:hover {
+    color: var(--top-banner-nav-hover-color-sticky);
+}
+
+.top-banner,
+.top-banner .top-banner-nav-menu {
+  transition: background-color var(--scroll-time) ease, color var(--scroll-time) ease, opacity 0.6s ease-in-out, clip-path 0.6s ease-in-out;
+}
+
+.top-banner-nav-links a {
+  transition: color var(--scroll-time) ease;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .top-banner-nav-menu {
+        position: absolute;
+        top: 68px;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        background-color: var(--top-banner-background-color);
+        color: var(--top-banner-nav-color);
+        clip-path: inset(0 0 100% 0);
+        pointer-events: none;
+        flex: 1;
+        max-width: 100%;
+        height: calc(100vh - 100%);
+        padding-bottom: 20px;
+    }
+
+    .top-banner-nav-menu.active {
+        clip-path: inset(0 0 0 0);
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .top-banner-nav-links {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .top-banner-nav-links li {
+        margin: 10px 0;
+    }
+
+    .top-banner-hamburger {
+        display: flex;
+    }
+
+    .top-banner-right-button-desktop {
+        display: none;
+    }
+
+    .top-banner-right-button-moblie {
+        display: block;
+    }
+}
+
+/* Hamburger animations */
+@keyframes hamburger-toggle-T {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(11px) rotate(0deg); }
+    100% { transform: translateY(11px) rotate(-135deg); }
+}
+
+@keyframes hamburger-toggle-M {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(0) rotate(-135deg); }
+}
+
+@keyframes hamburger-toggle-B {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-11px) rotate(0deg); }
+    100% { transform: translateY(-11px) rotate(135deg); }
+}    
+
+/* === this is End === */

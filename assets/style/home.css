@@ -1,0 +1,77 @@
+/* Copyright (C) 2025 Ray Zuo, S.D.G. , MIT licence. see /README.md */
+
+.home-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;    
+    width: calc(100% - 80px);            
+    background-color: var(--theme3);
+}
+
+.home-info-person {
+    text-align: center;
+}
+
+/* banner 2 */
+.home-info-schedule {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 15px 30px;
+}
+
+/* Left column (A1–A4) */
+.home-info-schedule > p:nth-child(1) { grid-row: 1; grid-column: 1; }
+.home-info-schedule > p:nth-child(2) { grid-row: 2; grid-column: 1; }
+.home-info-schedule > p:nth-child(3) { grid-row: 3; grid-column: 1; }
+.home-info-schedule > p:nth-child(4) { grid-row: 4; grid-column: 1; }
+
+/* Right column (B1–B4) */
+.home-info-schedule > p:nth-child(5) { grid-row: 1; grid-column: 2; }
+.home-info-schedule > p:nth-child(6) { grid-row: 2; grid-column: 2; }
+.home-info-schedule > p:nth-child(7) { grid-row: 3; grid-column: 2; }
+.home-info-schedule > p:nth-child(8) { grid-row: 4; grid-column: 2; }
+
+
+.home-info-schedule p { margin: 3px; }
+
+@media (max-width: 600px) {
+    .home-info-schedule {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+    }
+
+    .home-info-schedule > p {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+    }
+}    
+
+.home-info-youtube1 {
+    width: min(530px, calc(100% - 40px));
+}
+
+.home-ourmission {
+    background-color: var(--theme2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.home-ourmission > h2 {
+    font-size: 24px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px; 
+}
+
+.home-ourmission > p {
+    font-size: 20px;
+}
