@@ -1,0 +1,190 @@
+/* Copyright (C) 2025 Ray Zuo, S.D.G. , MIT licence. see /README.md */
+
+.contactus-text {
+	text-align: center;
+	max-width: calc(100% - 60px);
+}
+
+.contactus-forms {
+	width: min(1200px, calc(100% - 60px));
+	padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+	gap: 15px 50px;
+    margin-bottom: 40px;
+}
+
+.contactus-forms-images {
+    width: 100%;
+	height: auto;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.contactus-forms-images-image {
+    width: 100%;
+	height: auto;
+    border-radius: 32px;
+}
+
+.form {
+	height: calc(100% - 60px);
+    padding: 30px;
+    border-radius: 32px;
+	background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 2fr 2fr 2fr 4fr 2fr 1fr;
+    grid-template-areas:
+        "title title"
+        "q1 q2"
+		"q3 q3"
+        "q4 q4"
+		"q5 q5"
+		"submit made"
+        "error error";
+    gap: 5px 20px;
+}
+
+@media (max-width: 600px) {
+    .contactus-forms {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 1fr;
+        gap: 40px;
+	}
+	
+	.form {
+		grid-template-columns: 1fr;
+		/* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr; */
+	    grid-template-rows: repeat(8, auto);
+		grid-template-areas:
+			"title"
+			"q1"
+			"q2"
+			"q3"
+			"q4"
+			"q5"
+			"submit"
+			"made"
+			"error";
+		gap: 5px 20px;
+	}
+	
+	.contactus-forms-image {
+		width: auto;
+		height: 100%;
+		border-radius: 32px;
+	}
+	
+	.contactus-forms-images-image {
+		width: auto;
+		height: 100%;
+		border-radius: 32px;
+	}
+}
+
+.form-error {
+	margin: 3px 15px;
+	padding: 0 15px;
+    background-color: red;
+	color: #FFFFFF;
+	font-size: 12px;
+	grid-area: error;
+	display: none; /* only have error */
+}
+
+.form-title {
+	margin: 9px 0;
+   	grid-area: title;
+}
+
+.form > span > label {
+    font-weight: 850;
+	font-size: 14px;
+	color: black;
+}
+
+.form > span > label > .form-requiredspan {
+	font-weight: 400;
+	font-size: 10px;
+	color: #AAA;
+}
+
+.form > span > input[type="text"],
+.form > span > textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--theme3);
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form > span > input[type="text"]:focus,
+.form > span > textarea:focus {
+    border-color: var(--theme4);
+    outline: none;
+}
+
+.form > span > textarea {
+	height: calc(100% - 25px);
+}
+
+.form > .form-question-1 {grid-area: q1;}
+.form > .form-question-2 {grid-area: q2;}
+.form > .form-question-3 {grid-area: q3;}
+.form > .form-question-4 {grid-area: q4;}
+.form > .form-question-5 {grid-area: q5;}
+.form > .form-note { grid-area: made;}
+
+.form > .submit-button {
+    margin: 14px;
+	height: calc(100% - 28px);
+	width: max(calc(100% - 60px), 80px);
+	border: 0px solid #FFFFFF;
+	font-size: 16px;
+    text-align: center;
+	font-weight: 850;
+	grid-area: submit;
+}
+
+.form > .form-200page {
+	display: none;
+}
+
+.form > .form-200page.active {
+	display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    background: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.form > noscript {
+    background: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+	display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    background-color: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
+    color: var(--theme-text);
+    border-radius: 32px;
+}

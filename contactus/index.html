@@ -24,7 +24,7 @@
 	<!-- this is to add CSS -->
 	<link rel="stylesheet" href="/assets/style/global.css" />
 	<link rel="stylesheet" href="/assets/style/top-banner.css" />
-	<link rel="stylesheet" href="/assets/style/worship.css" />
+    <link rel="stylesheet" href="/assets/style/contactus.css" />
 </head>
 <body>
     <!-- Hello! Christian devalopers! My name is Ray, you can check my youtube @RayStudio1130 to get more!
@@ -73,12 +73,52 @@
 
     <span class="page-top"></span>
 
-    <div style="width: calc(100% - 100px); text-align: center;">
-		<h1>尽管我們知道耶穌希望幫助您，但此頁面目前正在維護中。請稍後再訪問。
-			造成您的不便，我們深表歉意。</h1>
-		<h3>尽管我们知道耶稣希望帮助您，但此页面目前正在维护中。请稍后再访问。造成您的不便，我们深表歉意。</h3>
-		<h3>While we know Jesus wants to help you, this page is currently undergoing maintenance. 
-			Please try again later. We apologize for the inconvenience.</h3>
+    <h1 class="contactus-title">聯絡我們</h1>
+	<p class="contactus-text">请填写一些信息，我们将尽快与您联系！<br> 我们期待您的回复。</p>
+	
+	<div class="contactus-forms">
+	    <div class="contactus-forms-images">
+	        <img src="/assets/images/cross.webp" alt="the cross" class="contactus-forms-images-image">
+		</div>
+		<!-- form API: -->
+		<form class="form" id="contactForm">
+		    <p class="form-error" id="form-error-space">很抱歉,你的表單沒有提交成功.因為你的表單沒有填寫完成。</p>
+			<h2 class="form-title">聯絡我們 (Contact Us)</h2>
+			<span class="form-question-1">
+                <label for="form-q1">名字(first name) <span class="form-requiredspan">必填 required</span></label>
+                <input type="text" id="form-q1" name="entry.239742720">
+			</span>
+			<span class="form-question-2">
+                <label for="form-q2">姓氏(last name) <span class="form-requiredspan">必填 required</span></label>
+                <input type="text" id="form-q2" name="entry.1985792122">
+			</span>
+			<span class="form-question-3">
+                <label for="form-q3">電子郵件(email)</label>
+                <input type="text" id="form-q3" name="entry.1177328936">
+			</span>
+			<span class="form-question-4">
+                <label for="form-q4">電話(phone) <span class="form-requiredspan">必填 required</span></label>
+                <input type="text" id="form-q4" name="entry.1263058962">
+			</span>
+			<span class="form-question-5">
+                <label for="form-q5">信息(message) <span class="form-requiredspan">必填 required</span></label>
+                <textarea type="text" id="form-q5" name="entry.1130641167"></textarea>
+			</span>
+			<button type="submit" class="page-button submit-button">提交(submit)</button>
+			<small class="form-note">請注意本網站只是一個仿製網站,不是真正的網站。隨便填寫這些內容。你所填寫的表單資料將會進入一個Google form。</small>
+			<noscript><p>我們很抱歉。<br>
+			             因為你的瀏覽器不允許JavaScript導致我們沒辦法讓你傳送訊息。<br>
+			             请<a href="https://turnonjs.com" title="了解如何启用 JavaScript">启用 JavaScript</a>，以获得完整的网站功能。<br>
+					     我們知道耶穌一直在幫助你。</p>
+				      <p>We're sorry. <br>
+						 We couldn't send your message because your browser doesn't allow JavaScript. <br>
+					 	 Please <a href="https://turnonjs.com" title="Learn how to enable JavaScript">enable JavaScript</a> for full site functionality. <br>
+						 We know Jesus is always helping you. </p></noscript>
+			<div id="form200Page" class="form-200page">
+			    <h2> 我們成功收到了你的信息! </h2>
+				<h2> We successfully received your message! </h2> 
+			</div>
+		</form>
 	</div>
 
     <span class="page-end"></span>
@@ -107,7 +147,7 @@
 		</div>
         <p class="footer-copyright">
 		    This website is made by Ray Zuo. for his youtube, go <a href="https://youtube.com/@RayStudio1130"> @RayStudio1130 </a><br>
-            Copyright &copy; Ray Studio 2025, all right resered by <a href="/LICENCE.txt">licence.txt</a>, S.D.G. more on <a href="/README.md">there!</a>.<br>
+            Copyright &copy; Ray Studio 2025, all right resered by <a href="/LICENSE.txt">license.txt</a>, S.D.G. more on <a href="/README.md">there!</a>.<br>
             "Love your lord with all your heart and with all your soul and with all your mind." --- Matthew 22:37. 	<br>
 			(disclarmer: only website (HTML design, CSS, JS) is by Ray Studio, images, text is by <a href="https://ccbcmaryland.org"> ccbcmaryland.org</a>)<br>
 		</p>
@@ -117,5 +157,6 @@
 
 	<!-- Ezra 4:7	They wrote in the Aramaic language and "JavaScript" to King Artaxerxes of Persia. -->
 	<script src="/assets/script/top-banner.js"></script>
+	<script src="/assets/script/contactus.js"></script>
 </body>
 </html>
