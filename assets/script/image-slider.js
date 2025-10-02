@@ -4,7 +4,10 @@
 // First digit: '1' to enable dots, '0' to hide them.
 // Second digit: '1' to enable arrows, '0' to hide them.
 // Third digit: '0' for no autoplay, '1-9' for autoplay duration in seconds.
-const sliderMode = "115";
+//const sliderMode = "115";
+
+const sliderMode = typeof sliderMode !== "undefined" ? sliderMode : "115";
+
 
 let currentSlide = 0;
 const slides = document.querySelector('.image-slider-slides');

@@ -1,0 +1,42 @@
+.image-gallery {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    position: relative;
+    margin: 40px 0;
+}
+
+.image-gallery-track {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    gap: 40px;
+}
+
+.image-gallery-item {
+    border-radius: 40px;
+    flex-shrink: 0;
+    width: auto;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.image-gallery-item-div {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9; /* or whatever you choose */
+    background-image: var(--bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+	.image-gallery {
+		height: 180px;
+	}
+}

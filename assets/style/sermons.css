@@ -1,0 +1,18 @@
+.sermons-youtubes {
+    width: 100%;
+	height: min(max(calc(100vh - 200px), 315px), 800px);
+}
+
+@media (max-width: 600px){
+	.sermons-youtubes {
+		height: 315px;
+	}
+}
+
+.sermons-title {
+    font-size: 55px;
+}
+
+.sermons-text {
+	font-size: 25px;
+}

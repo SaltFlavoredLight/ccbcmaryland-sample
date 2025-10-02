@@ -91,6 +91,40 @@ a:hover {
 	/*those are defalut */
 }
 
+.top-banner-right-button-desktop a  {
+    justify-content: flex-end;
+	color: #d4af37 !important;
+	font-weight: 700;
+}
+
+.lang-note {
+    text-align: center;
+	padding: 10px;
+	width: calc(100% - 20px);
+	margin: 0;
+	background-color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .lang-note {
+	    display: none;
+	}
+}
+
+.top-banner-right-button-moblie a  {
+    display: none;
+	color: #d4af37 !important;
+	font-weight: 700;
+}
+
+.top-banner-right-button-desktop a:hover {
+	color: var(--theme5);
+}
+
+.top-banner-right-button-moblie a:hover {
+	color: var(--theme5);
+}
+
 @media (max-width: 768px) {
 
     .top-banner-hamburger {

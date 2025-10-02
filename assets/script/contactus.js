@@ -33,6 +33,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     document.getElementById('form200Page').classList.add('active');
     form.reset();
   }).catch((err) => {
+	formError.innerText = `很抱歉，表单提交失败了。这就是我们所看到的错误: ${err}`
+    formError.style.display = 'block';
     console.error('Submission failed', err);
   });
 });

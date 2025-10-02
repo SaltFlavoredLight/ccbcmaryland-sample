@@ -1,0 +1,52 @@
+.ministres-followtitle {
+	margin: 0;
+	padding: 20px 0;
+	width: 100%;
+	background-color: var(--theme2);
+	align-items: center;
+	text-align: center;
+}
+
+.ministries-follow {
+	width: calc(100% - 80px);
+	background-color: var(--theme2);
+    display: flex;
+	flex-wrap: wrap;
+    gap: 50px 40px;
+	align-items: center;
+    justify-content: center;
+    align-items: center;
+	padding: 40px;
+}
+
+.ministries-follow-one {
+    width: 180px;
+	align-items: center;
+	text-align: center;
+}
+
+.ministres-worshiptitle {
+	margin: 0;
+	padding: 20px 0;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+}
+
+.ministries-worship {
+	width: calc(100% - 100px);
+    display: flex;
+	flex-wrap: wrap;
+    gap: 50px 40px;
+	align-items: center;
+    justify-content: center;
+	padding: 40px 50px;
+}
+
+.ministries-worship-one {
+    width: 140px;
+}
+
+.ministries-worship-one h3 {
+    color: var(--theme4);
+}
