@@ -1,0 +1,103 @@
+/* Copyright (C) 2025 Ray Zuo, S.D.G. */
+
+.youth-minister {
+    width: 100%;
+	display: flex;
+	padding: 50px 0;
+}
+
+.youth-minister-youtube {
+    flex-shrink: 0;
+	height: auto;
+	width: 54%;
+    aspect-ratio: 16 / 9;
+}
+
+.youth-minister-detail {
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	gap: 20px;
+}
+
+.youth-minister-detail > * {
+	margin: 0px;
+	text-align: center;
+}
+
+@media (max-width: 770px) {
+    .youth-minister {
+        flex-direction: column;
+    }
+	
+	.youth-minister-youtube {
+		flex-shrink: 0;
+		height: auto;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+	}
+
+	.youth-minister-detail {
+        margin-top: 30px;
+	    gap: 8px;
+	}
+
+	.youth-minister-detail > * {
+		margin: 8px;
+	}
+}
+
+.youth-vbs24 {
+    width: 100%;
+	display: flex;
+	padding: 50px 0;
+}
+
+.youth-vbs24-youtube {
+    flex-shrink: 0;
+	height: auto;
+	width: 54%;
+    aspect-ratio: 16 / 9;
+}
+
+.youth-vbs24-detail {
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	gap: 20px;
+}
+
+.youth-vbs24-detail > * {
+	margin: 0px;
+	text-align: center;
+}
+
+@media (max-width: 770px) {
+    .youth-vbs24 {
+        flex-direction: column;
+    }
+	
+	.youth-vbs24-youtube {
+		flex-shrink: 0;
+		height: auto;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+	}
+
+	.youth-vbs24-detail {
+        margin-top: 30px;
+	    gap: 8px;
+	}
+
+	.youth-vbs24-detail > * {
+		margin: 8px;
+	}
+}
+
+.youth-vbs24 {
+    flex-direction: row-reverse;
+}
