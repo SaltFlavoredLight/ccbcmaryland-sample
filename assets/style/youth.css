@@ -1,5 +1,9 @@
 /* Copyright (C) 2025 Ray Zuo, S.D.G. */
 
+.youth-lang {
+	text-align: center;
+}
+
 .youth-minister {
     width: 100%;
 	display: flex;
@@ -29,6 +33,7 @@
 
 @media (max-width: 770px) {
     .youth-minister {
+	    padding: 20px 0;
         flex-direction: column;
     }
 	
@@ -53,6 +58,7 @@
     width: 100%;
 	display: flex;
 	padding: 50px 0;
+    flex-direction: row-reverse;
 }
 
 .youth-vbs24-youtube {
@@ -78,6 +84,7 @@
 
 @media (max-width: 770px) {
     .youth-vbs24 {
+	    padding: 20px 0;
         flex-direction: column;
     }
 	
@@ -96,8 +103,4 @@
 	.youth-vbs24-detail > * {
 		margin: 8px;
 	}
-}
-
-.youth-vbs24 {
-    flex-direction: row-reverse;
 }

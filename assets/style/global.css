@@ -175,7 +175,7 @@ body > noscript {
 .footer-contect {
     height: 250px;
     display: flex;
-    width: min(1200px, calc(100vw - 80px));
+    width: min(1500px, calc(100vw - 80px));
 }
 
 .footer-contect > div {
