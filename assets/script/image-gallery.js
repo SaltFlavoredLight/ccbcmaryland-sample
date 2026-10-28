@@ -55,10 +55,10 @@ class AspectRatioScroller {
     }
 }
 
-document.querySelectorAll('.image-gallery').forEach(gallery => {
+document.querySelectorAll('.image-gallery').forEach((gallery, index) => {
     new AspectRatioScroller(gallery, {
-        speedNormal: 1,
-        speedHover: 1,
+        speedNormal: index % 2 === 0 ? 1 : -1,   // Alternates 1, -1, ...
+        speedHover: index % 2 === 0 ? 0.5 : -0.5, // Alternates 0.5, -0.5, ...
         startPos: -300
     });
 });
